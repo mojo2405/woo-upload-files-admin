@@ -38,14 +38,14 @@ $images = get_post_meta( get_the_ID(), '_es_uploaded_files', true );
         </div>
     </form>
     <div id= "es_images" >
-        <?php foreach ($images as $image){  ?>
+        <?php if ( $images && count($images) > 0 ) : foreach ( $images as $image ){  ?>
             <div>
                 <a class="es-delete-img" href="#" title="<?php _e('Delete File'); ?>"><i class="fa fa-close fa-2x"></i></a>
                 <a href="<?php echo $image['url'] ?>" target="_blank">
                     <img src="<?php echo $image['url'] ?>" height="50%" width="50%"/>
                 </a>
             </div>
-        <?php  } ?>
+        <?php  } endif; ?>
     </div>
 
 
@@ -54,11 +54,11 @@ $images = get_post_meta( get_the_ID(), '_es_uploaded_files', true );
 <script type="text/javascript">
 
     // When the Delete button is clicked...
-    $('body').on('click', '.es-delete-img', function(e){
+    jQuery('body').on('click', '.es-delete-img', function(e){
         e.preventDefault;
-        $(".loadersmall").show();
+        jQuery(".loadersmall").show();
         var fd = new FormData();
-        var file_data = $(this).next()[0].href; // The <input type="file" /> field
+        var file_data = jQuery(this).next()[0].href; // The <input type="file" /> field
         fd.append('file', file_data);
 
         // our AJAX identifier
@@ -67,7 +67,7 @@ $images = get_post_meta( get_the_ID(), '_es_uploaded_files', true );
         // Remove this code if you do not want to associate your uploads to the current page.
         fd.append('post_id', <?php echo $post->ID; ?>);
 
-        $.ajax({
+        jQuery.ajax({
             type: 'POST',
             url: '<?php echo admin_url( 'admin-ajax.php' ); ?>',
             data: fd,
@@ -83,21 +83,21 @@ $images = get_post_meta( get_the_ID(), '_es_uploaded_files', true );
                 alert(thrownError);
             }
         }).done(function( data ) {
-            $(".loadersmall").hide();
+            jQuery(".loadersmall").hide();
 
         });
     });
 
     // When the Upload button is clicked...
-    $('body').on('click', '.upload-form .btn-upload', function(e){
+    jQuery('body').on('click', '.upload-form .btn-upload', function(e){
         e.preventDefault;
-        $(".loadersmall").show();
+        jQuery(".loadersmall").show();
         var fd = new FormData();
-        var files_data = $('.upload-form .files-data'); // The <input type="file" /> field
+        var files_data = jQuery('.upload-form .files-data'); // The <input type="file" /> field
 
         // Loop through each data and create an array file[] containing our files data.
-        $.each($(files_data), function(i, obj) {
-            $.each(obj.files,function(j,file){
+        jQuery.each(jQuery(files_data), function(i, obj) {
+            jQuery.each(obj.files,function(j,file){
                 fd.append('files[' + j + ']', file);
             })
         });
@@ -108,7 +108,7 @@ $images = get_post_meta( get_the_ID(), '_es_uploaded_files', true );
         // Remove this code if you do not want to associate your uploads to the current page.
         fd.append('post_id', <?php echo $post->ID; ?>);
 
-        $.ajax({
+        jQuery.ajax({
             type: 'POST',
             url: '<?php echo admin_url( 'admin-ajax.php' ); ?>',
             data: fd,
@@ -116,7 +116,7 @@ $images = get_post_meta( get_the_ID(), '_es_uploaded_files', true );
             processData: false,
             success: function(response){
                 //$('.upload-response').html(response); // Append Server Response
-                $('.upload-response').html('<?php _e('Upload finised. refreshing...'); ?>');
+                jQuery('.upload-response').html('<?php _e('Upload finised. refreshing...'); ?>');
                 location.reload();
             },
             error: function (xhr, ajaxOptions, thrownError) {
@@ -124,7 +124,7 @@ $images = get_post_meta( get_the_ID(), '_es_uploaded_files', true );
                 alert(thrownError);
             }
         }).done(function( data ) {
-            $(".loadersmall").hide();
+            jQuery(".loadersmall").hide();
 
         });
     });

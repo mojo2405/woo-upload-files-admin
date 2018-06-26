@@ -51,28 +51,40 @@ class Es_Woo_Upload_Files_Admin {
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
-        add_action( 'wp_ajax_store_files', array( $this,'es_store_files') );
-        add_action( 'wp_ajax_delete_file', array( $this,'es_delete_file') );
-        add_action( 'add_meta_boxes', array( $this,'es_meta_box_add' ));
+
 
 	}
 
 
+	/**
+	 * Add metabox to admin UI
+	 *
+	 * @since    1.0.0
+	 */
     public function es_meta_box_add()
     {
         add_meta_box( 'es_upload_files', __('Upload Files'), array($this,'es_meta_box_cb'), 'shop_order', 'side', 'high' );
     }
 
 
+	/**
+	 * Callback for add metabox to admin UI
+	 *
+	 * @since    1.0.0
+	 */
+
     public function es_meta_box_cb()
     {
         include_once( dirname( __FILE__ ) . '/partials/es-woo-upload-files-admin-display.php' );
     }
-        /**
-     * Store files .
-     *
-     * @since    1.0.0
-     */
+
+
+	/**
+	 * Store files in the DB and in the FS
+	 *
+	 * @since    1.0.0
+	 */
+
     public function es_store_files()
     {
         global $wp_filesystem;
@@ -105,6 +117,12 @@ class Es_Woo_Upload_Files_Admin {
     }
 
 
+	/**
+	 * Delete files phyisically and from the DB
+	 *
+	 * @since    1.0.0
+	 */
+
     public function es_delete_file()
     {
         $index = -1;
@@ -126,7 +144,6 @@ class Es_Woo_Upload_Files_Admin {
             delete_post_meta( $_POST['post_id'], '_es_uploaded_files');
         }
 
-        // Don't forget to stop execution afterward.
         wp_die();
     }
 
@@ -136,18 +153,6 @@ class Es_Woo_Upload_Files_Admin {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Es_Woo_Upload_Files_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Es_Woo_Upload_Files_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/es-woo-upload-files-admin.css', array(), $this->version, 'all' );
 
@@ -159,18 +164,6 @@ class Es_Woo_Upload_Files_Admin {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Es_Woo_Upload_Files_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Es_Woo_Upload_Files_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/es-woo-upload-files-admin.js', array( 'jquery' ), $this->version, false );
 
