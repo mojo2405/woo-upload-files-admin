@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Woocommerce Upload Files To Order\n"
+"POT-Creation-Date: 2018-04-24 18:34+0300\n"
+"PO-Revision-Date: 2018-04-24 15:40+0000\n"
+"Last-Translator: Eitan Shaked <eitan.shak@gmail.com>\n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ../../Downloads/es-woo-upload-files-V1/es-woo-upload-"
+"files/admin/partials\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+"Report-Msgid-Bugs-To: "
+
+#: es-woo-upload-files-admin-display.php:28
+msgid "Select Files:"
+msgstr ""
+
+#: es-woo-upload-files-admin-display.php:32
+msgid "Upload"
+msgstr ""
+
+#: es-woo-upload-files-admin-display.php:39
+msgid "Delete File"
+msgstr ""
+
+#: es-woo-upload-files-admin-display.php:109
+msgid "Upload finised. refreshing..."
+msgstr ""

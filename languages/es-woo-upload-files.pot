@@ -1,0 +1,38 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-04-24 19:03+0300\n"
+"PO-Revision-Date: 2018-04-24 18:35+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: ../admin\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: class-es-woo-upload-files-admin.php\n"
+"X-Poedit-SearchPath-1: partials/es-woo-upload-files-admin-display.php\n"
+
+#: class-es-woo-upload-files-admin.php:63
+msgid "Upload Files"
+msgstr ""
+
+#: partials/es-woo-upload-files-admin-display.php:28
+msgid "Select Files:"
+msgstr ""
+
+#: partials/es-woo-upload-files-admin-display.php:32
+msgid "Upload"
+msgstr ""
+
+#: partials/es-woo-upload-files-admin-display.php:39
+msgid "Delete File"
+msgstr ""
+
+#: partials/es-woo-upload-files-admin-display.php:109
+msgid "Upload finised. refreshing..."
+msgstr ""
