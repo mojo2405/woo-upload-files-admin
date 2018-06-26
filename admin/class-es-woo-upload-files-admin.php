@@ -155,6 +155,8 @@ class Es_Woo_Upload_Files_Admin {
 	public function enqueue_styles() {
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/es-woo-upload-files-admin.css', array(), $this->version, 'all' );
+		// Load font awesome
+		wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
 
 	}
 
