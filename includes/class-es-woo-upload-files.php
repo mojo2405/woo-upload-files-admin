@@ -26,35 +26,35 @@
  * @author     Eitan Shaked <eitan.shak@gmail.com>
  */
 class Es_Woo_Upload_Files {
-
+	
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
 	 * the plugin.
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Es_Woo_Upload_Files_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      Es_Woo_Upload_Files_Loader $loader Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
-
+	
 	/**
 	 * The unique identifier of this plugin.
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
+	 * @var      string $plugin_name The string used to uniquely identify this plugin.
 	 */
 	protected $plugin_name;
-
+	
 	/**
 	 * The current version of the plugin.
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      string    $version    The current version of the plugin.
+	 * @var      string $version The current version of the plugin.
 	 */
 	protected $version;
-
+	
 	/**
 	 * Define the core functionality of the plugin.
 	 *
@@ -63,20 +63,20 @@ class Es_Woo_Upload_Files {
 	 *
 	 * @since    1.0.0
 	 */
-	public function __construct() {
-		if ( defined( 'PLUGIN_NAME_VERSION' ) ) {
+	public function __construct () {
+		if ( defined ( 'PLUGIN_NAME_VERSION' ) ) {
 			$this->version = PLUGIN_NAME_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
 		$this->plugin_name = 'es-woo-upload-files';
-
-		$this->load_dependencies();
-		$this->set_locale();
-		$this->define_admin_hooks();
-
+		
+		$this->load_dependencies ();
+		$this->set_locale ();
+		$this->define_admin_hooks ();
+		
 	}
-
+	
 	/**
 	 * Load the required dependencies for this plugin.
 	 *
@@ -92,31 +92,31 @@ class Es_Woo_Upload_Files {
 	 * @since    1.0.0
 	 * @access   private
 	 */
-	private function load_dependencies() {
-
+	private function load_dependencies () {
+		
 		/**
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-es-woo-upload-files-loader.php';
-
-
+		require_once plugin_dir_path ( dirname ( __FILE__ ) ) . 'includes/class-es-woo-upload-files-loader.php';
+		
+		
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-es-woo-upload-files-i18n.php';
-
+		require_once plugin_dir_path ( dirname ( __FILE__ ) ) . 'includes/class-es-woo-upload-files-i18n.php';
+		
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-es-woo-upload-files-admin.php';
-
-
+		require_once plugin_dir_path ( dirname ( __FILE__ ) ) . 'admin/class-es-woo-upload-files-admin.php';
+		
+		
 		$this->loader = new Es_Woo_Upload_Files_Loader();
-
+		
 	}
-
+	
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
@@ -126,14 +126,14 @@ class Es_Woo_Upload_Files {
 	 * @since    1.0.0
 	 * @access   private
 	 */
-	private function set_locale() {
-
+	private function set_locale () {
+		
 		$plugin_i18n = new Es_Woo_Upload_Files_i18n();
-
-		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
-
+		
+		$this->loader->add_action ( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
+		
 	}
-
+	
 	/**
 	 * Register all of the hooks related to the admin area functionality
 	 * of the plugin.
@@ -141,34 +141,33 @@ class Es_Woo_Upload_Files {
 	 * @since    1.0.0
 	 * @access   private
 	 */
-	private function define_admin_hooks() {
-
-		$plugin_admin = new Es_Woo_Upload_Files_Admin( $this->get_plugin_name(), $this->get_version() );
-
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-
+	private function define_admin_hooks () {
+		
+		$plugin_admin = new Es_Woo_Upload_Files_Admin( $this->get_plugin_name (), $this->get_version () );
+		
+		$this->loader->add_action ( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
+		$this->loader->add_action ( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		
 		// File handling
-		$this->loader->add_action( 'wp_ajax_store_files', $plugin_admin, 'es_store_files' );
-		$this->loader->add_action( 'wp_ajax_delete_file', $plugin_admin, 'es_delete_file' );
-
+		$this->loader->add_action ( 'wp_ajax_store_files', $plugin_admin, 'es_store_files' );
+		$this->loader->add_action ( 'wp_ajax_delete_file', $plugin_admin, 'es_delete_file' );
+		
 		// UI
-		$this->loader->add_action( 'add_meta_boxes', $plugin_admin, 'es_meta_box_add' );
-
-
+		$this->loader->add_action ( 'add_meta_boxes', $plugin_admin, 'es_meta_box_add' );
+		
+		
 	}
-
-
-
+	
+	
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.
 	 *
 	 * @since    1.0.0
 	 */
-	public function run() {
-		$this->loader->run();
+	public function run () {
+		$this->loader->run ();
 	}
-
+	
 	/**
 	 * The name of the plugin used to uniquely identify it within the context of
 	 * WordPress and to define internationalization functionality.
@@ -176,28 +175,28 @@ class Es_Woo_Upload_Files {
 	 * @since     1.0.0
 	 * @return    string    The name of the plugin.
 	 */
-	public function get_plugin_name() {
+	public function get_plugin_name () {
 		return $this->plugin_name;
 	}
-
+	
 	/**
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
 	 * @return    Es_Woo_Upload_Files_Loader    Orchestrates the hooks of the plugin.
 	 */
-	public function get_loader() {
+	public function get_loader () {
 		return $this->loader;
 	}
-
+	
 	/**
 	 * Retrieve the version number of the plugin.
 	 *
 	 * @since     1.0.0
 	 * @return    string    The version number of the plugin.
 	 */
-	public function get_version() {
+	public function get_version () {
 		return $this->version;
 	}
-
+	
 }

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="708b2d47-d7cf-41c2-8645-d1a5642d4fc7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/class-es-woo-upload-files-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/class-es-woo-upload-files-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/js/es-woo-upload-files-admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/js/es-woo-upload-files-admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/partials/es-woo-upload-files-admin-display.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/partials/es-woo-upload-files-admin-display.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es-woo-upload-files.php" beforeDir="false" afterPath="$PROJECT_DIR$/es-woo-upload-files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/class-es-woo-upload-files.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/class-es-woo-upload-files.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,24 +21,45 @@
       <file leaf-file-name="es-woo-upload-files.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/es-woo-upload-files.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+            <state relative-caret-position="918">
+              <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+              <folding>
+                <element signature="e#7#864#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class-es-woo-upload-files-loader.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files-loader.php">
+      <file leaf-file-name="class-es-woo-upload-files.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="186">
+              <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class-es-woo-upload-files-deactivator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files-deactivator.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/index.php">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="class-es-woo-upload-files-admin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/class-es-woo-upload-files-admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class-es-woo-upload-files-activator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files-activator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="es-woo-upload-files-admin.css" pinned="false" current-in-tab="false">
@@ -45,8 +71,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class-es-woo-upload-files-i18n.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files-i18n.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/index.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -55,25 +81,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="LICENSE.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="class-es-woo-upload-files-admin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/class-es-woo-upload-files-admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="158" column="38" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="es-woo-upload-files-admin-display.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/partials/es-woo-upload-files-admin-display.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="42" column="113" selection-start-line="42" selection-start-column="113" selection-end-line="42" selection-end-column="113" />
+            <state relative-caret-position="203">
+              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding>
                 <element signature="e#7#271#0#PHP" expanded="true" />
               </folding>
@@ -85,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/admin/js/es-woo-upload-files-admin.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -114,11 +126,13 @@
       <find>admin_enqueue_scripts</find>
       <find>publi</find>
       <find>update</find>
-      <find>es_store_files</find>
       <find>is_ad</find>
       <find>Beketov</find>
       <find>es-delete-img</find>
+      <find>Es_Woo_Upload_Files_Admin</find>
+      <find>es_store_files</find>
       <find>file</find>
+      <find>define_admin_hooks</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\eitansh\Downloads\es-woo-upload-files</dir>
@@ -130,12 +144,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/es-woo-upload-files.php" />
-        <option value="$PROJECT_DIR$/admin/css/es-woo-upload-files-admin.css" />
         <option value="$PROJECT_DIR$/README.txt" />
-        <option value="$PROJECT_DIR$/admin/js/es-woo-upload-files-admin.js" />
+        <option value="$PROJECT_DIR$/includes/class-es-woo-upload-files-activator.php" />
         <option value="$PROJECT_DIR$/admin/partials/es-woo-upload-files-admin-display.php" />
+        <option value="$PROJECT_DIR$/admin/js/es-woo-upload-files-admin.js" />
+        <option value="$PROJECT_DIR$/admin/css/es-woo-upload-files-admin.css" />
         <option value="$PROJECT_DIR$/includes/class-es-woo-upload-files.php" />
+        <option value="$PROJECT_DIR$/es-woo-upload-files.php" />
         <option value="$PROJECT_DIR$/admin/class-es-woo-upload-files-admin.php" />
       </list>
     </option>
@@ -206,6 +221,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -232,18 +248,19 @@
       <workItem from="1523995015235" duration="16829000" />
       <workItem from="1529994304733" duration="395000" />
       <workItem from="1529994736070" duration="1639000" />
-      <workItem from="1530002423820" duration="10195000" />
+      <workItem from="1530002423820" duration="15349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29058000" />
+    <option name="totallyTimeSpent" value="34212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="1" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -276,20 +293,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/es-woo-upload-files.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding>
-            <element signature="e#7#333#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -347,9 +354,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1717">
           <caret line="112" column="30" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="30" />
-          <folding>
-            <element signature="e#7#333#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -469,9 +473,6 @@
     <entry file="file://$PROJECT_DIR$/public/partials/es-woo-upload-files-public-display.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/languages/es-woo-upload-files.pot">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -482,20 +483,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="73" column="35" lean-forward="true" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
-          <folding>
-            <element signature="e#7#333#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files-activator.php">
+    <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files-deactivator.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files-deactivator.php">
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files-i18n.php">
@@ -503,28 +494,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files-loader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="-1059">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
+    <entry file="file://$PROJECT_DIR$/includes/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/es-woo-upload-files.php">
+    <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files-activator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        <state relative-caret-position="408">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/partials/es-woo-upload-files-admin-display.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="e#7#271#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/js/es-woo-upload-files-admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -535,20 +536,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/partials/es-woo-upload-files-admin-display.php">
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-es-woo-upload-files.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="42" column="113" selection-start-line="42" selection-start-column="113" selection-end-line="42" selection-end-column="113" />
+        <state relative-caret-position="186">
+          <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es-woo-upload-files.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
           <folding>
-            <element signature="e#7#271#0#PHP" expanded="true" />
+            <element signature="e#7#864#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/class-es-woo-upload-files-admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="158" column="38" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="38" />
+        <state relative-caret-position="578">
+          <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
         </state>
       </provider>
     </entry>

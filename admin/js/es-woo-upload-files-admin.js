@@ -1,18 +1,17 @@
-(function( $ ) {
-	'use strict';
+(function ($) {
+    'use strict';
 
-    $(function() {
+    $(function () {
 
         var $submit = $('#es_submit_files');
         var $file = $('#es_input_files');
         $file.change(
-            function(){
-                $submit.attr('disabled',($(this).val() ? false : true));
+            function () {
+                $submit.attr('disabled', ($(this).val() ? false : true));
             }
         );
 
-     });
+    });
 
 
-
-})( jQuery );
+})(jQuery);
